@@ -1,0 +1,40 @@
+.movie-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.movie {
+	margin: 1rem;
+	border-radius: 3px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+	background: linear-gradient(to bottom, #8fc1b5, #265c4b);
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+}
+
+.movie img {
+	max-width: 100%;
+}
+
+.movie-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	color: white;
+}
+
+.movie-details {
+	position: absolute;
+	bottom: 0;
+	background-color: #fff;
+	padding: 1rem;
+	overflow: auto;
+	transform: translateY(102%);
+	transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .movie-details {
+	transform: translateY(0%);
+}
