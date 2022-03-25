@@ -8,7 +8,7 @@ const Movie = ({ title, poster_path, vote_average, overview, id }) => {
 	const movies = useStore(state => state.movies);
 
 	const handleButton = () => {
-		addMovie(id);
+		addMovie(id, title, poster_path, vote_average, overview);
 		console.log(movies.length);
 		console.log(movies);
 	};
